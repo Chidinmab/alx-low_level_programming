@@ -6,6 +6,7 @@
  * @size: size
  * Return: void
  */
+
 void print_buffer(char *b, int size)
 {
 	int o, j, i;
@@ -19,8 +20,8 @@ void print_buffer(char *b, int size)
 	}
 	while (o < size)
 	{
-		j = size - o < 10 ? size - 0 : 10;
-		printf("%08x: ", 0);
+		j = size - o < 10 ? size - o : 10;
+		printf("%08x: ", o);
 		for (i = 0; i < 10; i++)
 		{
 			if (i < j)
