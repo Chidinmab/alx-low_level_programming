@@ -28,7 +28,6 @@ int append_text_to_file(const char *filename, char *text_content)
 			;
 
 		rwr = write(file_d, text_content, nletters);
-		printf("%s\n", text_content);
 
 		if (rwr == -1)
 			return (-1);
